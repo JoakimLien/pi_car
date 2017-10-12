@@ -1,0 +1,62 @@
+//Last ned bibloteket under på raspberryen, dette bibloteket er ganske sweet
+// kan kode fra bunnen av om ønskelig.
+// har kun laget basic funksjoner så vi får testet kommunikasjon mellom bil, arduino og PI
+#include "ArduinoMotorShieldR3.h"
+//M1 = pmwA
+//M2 = pwmB
+
+ArduinoMotorShieldR3 md;
+
+void setup()
+{
+  Serial.begin(115200);
+  Serial.println("Arduino Motor Shield R3");
+  md.init();
+}
+
+void loop()
+{
+
+
+}
+// Move forwards full speed
+void forward()
+{
+  md.setM1Speed(400);
+  md.setM2Speed(400);
+}
+
+// move backwards full speed
+void backwards()
+{
+  md.setM1Speed(-400);
+  md.setM2Speed(-400);
+}
+// Move forwards HALF speed
+void forwardHalfSpeed()
+{
+  md.setM1Speed(200);
+  md.setM2Speed(200);
+}
+
+// move backwards full speed
+void backwardsHalfSpeed()
+{
+  md.setM1Speed(-200);
+  md.setM2Speed(-200);
+}
+
+// Turn right
+void turnRight()
+{
+  md.setM1Speed(200);
+  md.setM2Speed(400);
+}
+
+// Turn left
+void turnLeft()
+{
+  md.setM1Speed(400);
+  md.setM2Speed(200);
+}
+  
