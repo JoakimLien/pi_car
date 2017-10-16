@@ -9,14 +9,16 @@ ArduinoMotorShieldR3 md;
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println("Arduino Motor Shield R3");
   md.init();
 }
 
 void loop()
 {
-
+// if serial port is available, read incoming bytes
+  if (Serial.available() > 0) {
+    recv = Serial.read();
 
 }
 // Move forwards full speed
