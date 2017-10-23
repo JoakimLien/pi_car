@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphical User Interface</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-switch.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/highlight.css">
+        <link rel="stylesheet" type="text/css" href="../css/custom.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">PI car</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../control/index.html">Control</a></li>
+                    <li><a href="../speedSensor/index.html">Speed</a></li>
+                    <li><a href="../distanceSesnor/index.html">Distance</a></li>
+                    <li><a href="../lightSensor/index.html">Light</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Current motor power</h1>
+                <div
+		id="diagram-id-1" class="diagram"
+		data-circle-diagram='{
+			"percent": "50%",
+			"size": "280",
+			"borderWidth": "10",
+			"bgFill": "#cacaca",
+			"frFill": "#80d03c",
+			"textSize": "56",
+			"textColor": "#585858"
+                        }'></div>
+
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+                
+            </div>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                              <div class="input-group">
+                                  <input id="speed_input" type="tel" class="form-control" placeholder="Adjust motor power here">
+                                <span class="input-group-btn">
+                                    <button id="speed_button" class="btn btn-default" type="button">Apply</button>
+                                </span>
+                              </div><!-- /input-group -->
+                        </div>
+                        <div class="panel-footer">
+                            <b>Manual motor power:</b> <input id="toggle-event" type="checkbox" data-toggle="toggle" value="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../javascript/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../javascript/bootstrap-switch.js"></script>
+        <script type="text/javascript" src="../javascript/highlight.js"></script>
+        <script type="text/javascript" src="../javascript/main.js"></script>
+        <script type="text/javascript" src="../javascript/jquery.circle-diagram.js"></script>
+        <script type="text/javascript" src="../javascript/circle.js"></script>
+        <script type="text/javascript" src="speed.js"></script>
+    </body>
+</html>

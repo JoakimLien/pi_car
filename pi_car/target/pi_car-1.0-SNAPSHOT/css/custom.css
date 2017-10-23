@@ -1,0 +1,63 @@
+tr {
+width: 80%;
+display: inline-table;
+table-layout: fixed;
+}
+
+table{
+ height:300px;             
+ display: -moz-groupbox;   
+}
+tbody{
+  overflow-y: scroll;      
+  height: 200px;          
+  position: absolute;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+#arrow-up {
+    
+}
+
+#arrow-down {
+    
+}
+
+#arrow-left {
+    position:relative;
+    left:100px;
+}
+
+#arrow-right {
+    position:relative;
+    right:100px;
+}
+
+#arrow-up:active {
+    background-color:red;
+}
+
+#arrow-down:active {
+    background-color:red;
+}
+
+#arrow-left:active {
+    background-color:red;
+}
+
+#arrow-right:active {
+    background-color:red;
+}
+
+.diagram {
+	display: inline-block;
+	margin: 2em;
+}
