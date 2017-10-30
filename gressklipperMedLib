@@ -8,7 +8,7 @@ ArduinoMotorShieldR3 md;
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.setTimeout(20);
   Serial.println("Arduino Motor Shield R3 connected");
   md.init();
@@ -17,27 +17,37 @@ void setup()
 // Move forwards full speed
 void forwards()
 {
-  md.setM1Speed(400);
   md.setM2Speed(400);
+  md.setM1Speed(400);
+  Serial.println(md.getM2CurrentMilliamps());
+  Serial.println(md.getM1CurrentMilliamps());
+ 
 }
 //stop the car
 void stop()
 {
   md.setM1Speed(0);
   md.setM2Speed(0);
+
 }
 // move backwards full speed
 void backwards()
 {
   md.setM1Speed(-400);
   md.setM2Speed(-400);
+  Serial.println(md.getM2CurrentMilliamps());
+  Serial.println(md.getM1CurrentMilliamps());
 }
 
 // Turn right
 void turnRight()
 {
+
   md.setM1Speed(200);
   md.setM2Speed(400);
+  Serial.println(md.getM2CurrentMilliamps());
+  Serial.println(md.getM1CurrentMilliamps());
+  
 }
 
 // Turn left
@@ -57,20 +67,34 @@ String command = Serial.readString();
   if(command.equalsIgnoreCase("forwards"))
   {
     forwards();
+    Serial.flush();
   }
   else if(command.equalsIgnoreCase("backwards"))
   {
     backwards();
+    Serial.flush();
   }
     else if(command.equalsIgnoreCase("stop"))
   {
     stop();
+    Serial.flush();
   }
   else if(command.equalsIgnoreCase("turnl"))
   {
     turnLeft();
+    Serial.flush();
+   }
+    else if(command.equalsIgnoreCase("right"))
+  {
+    turnRight();
+    Serial.flush();
    }
   }
  }
 }
+
+
+
+
+
 
