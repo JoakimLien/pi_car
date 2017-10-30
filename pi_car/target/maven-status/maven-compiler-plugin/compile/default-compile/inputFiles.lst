@@ -1,5 +1,10 @@
-/Users/joakimlien/application/mavenproject1/pi_car/src/main/java/no/joakimlien/pi_car/lightSensor.java
-/Users/joakimlien/application/mavenproject1/pi_car/src/main/java/no/joakimlien/pi_car/speedSensor.java
-/Users/joakimlien/application/mavenproject1/pi_car/src/main/java/no/joakimlien/pi_car/control.java
-/Users/joakimlien/application/mavenproject1/pi_car/src/main/java/no/joakimlien/pi_car/distanceSensor.java
-/Users/joakimlien/application/mavenproject1/pi_car/src/main/java/no/joakimlien/pi_car/soundSensor.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/soundSensor.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/SerialWriter.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/distanceSensor.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/lightSensor.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/speedSensor.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/TwoWaySerialComm.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/RestConfig.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/Connect.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/SerialReader.java
+/Users/joakimlien/code/pi_car/pi_car/src/main/java/no/joakimlien/pi_car/control.java

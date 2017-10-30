@@ -25,7 +25,9 @@ public class control {
     @Produces( { "application/x-javascript", MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     @Path("manual")
     public void manual_control(@QueryParam("direction")String direction){
-        System.out.println(direction);
+        Connect connect = new Connect(direction);
     }
+    
+    
     
 }
