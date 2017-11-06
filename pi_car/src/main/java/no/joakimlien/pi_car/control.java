@@ -19,15 +19,20 @@ import javax.ws.rs.core.MediaType;
 @Stateless
 @Path("control")
 @Produces(MediaType.APPLICATION_JSON)
+
+
 public class control {
+    
+    public Connect connectController;
     
     @POST
     @Produces( { "application/x-javascript", MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     @Path("manual")
     public void manual_control(@QueryParam("direction")String direction){
-        Connect connect = new Connect(direction);
+       connectController = new Connect();
+       System.out.println("Connection is established");
     }
     
-    
+    // toggle metode som bestemmer om den er av eller på, eller boolean
     
 }
