@@ -20,6 +20,7 @@ import gnu.io.SerialPort;
     public void setCommand(String command)
     {
         this.msg = command;
+       
     }
 
     public void run() {
@@ -49,4 +50,5 @@ import gnu.io.SerialPort;
     }
 
   }
+ 
  
