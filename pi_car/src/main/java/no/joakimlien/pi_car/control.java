@@ -6,6 +6,7 @@
 package no.joakimlien.pi_car;
 
 import javax.ejb.Stateless;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -21,15 +22,17 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.APPLICATION_JSON)
 
 
-public class control {
+public class control { 
     
     public Connect connectController;
     
     @POST
-    @Produces( { "application/x-javascript", MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     @Path("manual")
     public void manual_control(@QueryParam("direction")String direction){
+        System.out.print(direction);
+        
        connectController = new Connect();
+        
        System.out.println("Connection is established");
     }
     
