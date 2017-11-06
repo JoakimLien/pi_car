@@ -1,4 +1,4 @@
-package TwoWaySerialComm3;
+package no.joakimlien.pi_car;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -20,6 +20,7 @@ import gnu.io.SerialPort;
     public void setCommand(String command)
     {
         this.msg = command;
+       
     }
 
     public void run() {
